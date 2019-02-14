@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w & nodemon --inspect=0.0.0.0:5858 --delay 100ms -w ./dist ./dist/app.js",
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/app.ts"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-router": "^7.0.38",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/xml2json": "^0.10.0",
+    "axios": "^0.18.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^4.13.18",
+    "ts-node": "^8.0.1",
+    "typescript": "^3.2.4",
+    "xml2json": "^0.11.2"
+  }
+}
